@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassDiagram>
+    <Class name="com.wyizd.hfdp.c09iterater.Equipment" x="221" y="248">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.wyizd.hfdp.c09iterater.Armous" x="491" y="308">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="com.wyizd.hfdp.c09iterater.Equipment"/>
+    </Class>
+    <Class name="com.wyizd.hfdp.c09iterater.ArmMenu" x="297" y="156">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="com.wyizd.hfdp.c09iterater.Menu"/>
+        <Association
+            destinationClassName="com.wyizd.hfdp.c09iterater.Equipment"
+            endpointName="arms" kind="Simple"/>
+    </Class>
+    <Class name="com.wyizd.hfdp.c09iterater.Menu" x="247" y="50">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.wyizd.hfdp.c09iterater.Arm" x="491" y="239">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="com.wyizd.hfdp.c09iterater.Equipment"/>
+    </Class>
+    <Class name="com.wyizd.hfdp.c09iterater.ArmousMenu" x="23" y="154">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="com.wyizd.hfdp.c09iterater.Menu"/>
+        <Association
+            destinationClassName="com.wyizd.hfdp.c09iterater.Equipment"
+            endpointName="armous" kind="Simple"/>
+    </Class>
+    <Class name="com.wyizd.hfdp.c09iterater.Package" x="26" y="48">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.wyizd.hfdp.c09iterater.Menu"
+            endpointName="list" kind="Simple"/>
+        <Communication destinationClassName="com.wyizd.hfdp.c09iterater.Menu"/>
+    </Class>
+</ClassDiagram>
